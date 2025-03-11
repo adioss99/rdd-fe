@@ -47,7 +47,7 @@ export const Header = () => {
       </nav>
       <header className="px-5 max-sm:px-2 w-full h-screen" id="home">
         <section className="bg-center bg-no-repeat grid h-8/9 bg-[url('/jum.png')] bg-gray-700 bg-blend-multiply rounded-2xl" >
-          <div className="px-4 m-auto max-w-screen-xl text-center py-24 lg:py-56">
+          <div className="px-4 m-auto max-w-screen-xl text-center">
             <img src="/android-chrome-192x192.png" className='m-auto w-[50px]' loading='lazy' alt="icon" />
             <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-white md:text-5xl"> Rice Disease Detection with AI</h1>
             <p className="mb-8 text-sm md:text-lg font-normal text-gray-300 sm:px-16 lg:px-48">Empowering Farmers with AI – Identify rice plant diseases with precision and visualize insights using GradCAM!</p>
