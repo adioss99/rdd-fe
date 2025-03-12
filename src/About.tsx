@@ -26,7 +26,7 @@ const About = () => {
       <footer className="grid justify-items-center bg-green-800 h-12">
         <p className="font-light text-sm text-white flex gap-1 m-auto">
           Developed by
-          <a href="https://github.com/adioss99" target="_blank" rel="noopener noreferrer" className="flex gap-0.5">
+          <a href="https://github.com/adioss99" target="_blank" rel="noopener noreferrer" className="flex gap-0.5 font-semibold">
             <svg xmlns="http://www.w3.org/2000/svg" height="22" width="12" viewBox="0 0 496 512">
               <path
                 fill="#ffffff"

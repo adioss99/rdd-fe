@@ -15,7 +15,7 @@ export const Header = () => {
       <nav className="sticky top-2 px-5 max-sm:px-2">
         <div className="relative flex justify-between px-10 max-md:px-5 py-3 rounded-2xl my-2 shadow-lg w-full bg-white">
           <div className="flex font-semibold md:text-xl my-auto">
-            <img src="public/favicon-32x32.png" alt="icons" /> <h1 className="my-auto"> Rice Disease Detection</h1>
+            <img src="/favicon-32x32.png" alt="icons" /> <h1 className="my-auto"> Rice Disease Detection</h1>
           </div>
           <button
             data-collapse-toggle="navbar-default"

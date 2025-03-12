@@ -25,7 +25,8 @@ export const Predict = () => {
   const [isLoading, setIsLoading] = useState<boolean | false>(false);
 
   const base: string = import.meta.env.VITE_API_URL;
-  
+  const bearer = 'Bearer ' + import.meta.env.VITE_TOKEN;
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     if (e.target.files && e.target.files.length > 0) {
       setFile(e.target.files[0]);
@@ -37,7 +38,6 @@ export const Predict = () => {
     if (!file) {
       return toast.info('Please input an image file!');
     }
-
     setIsLoading(true);
 
     const formData = new FormData();
@@ -47,9 +47,10 @@ export const Predict = () => {
       const response = await fetch(`${base}/api/v1/predict`, {
         method: 'POST',
         body: formData,
+        headers: { Authorization: bearer },
       });
+      
       const data = await response.json();
-
       setResult(data);
 
       if (data.success) {
